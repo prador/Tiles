@@ -70,6 +70,7 @@ $img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cCPdMK','2cCQeEz','2d2nKiS','2cYFpMe'
 //     .hover-#{$num} {
 //       background-image: url("http://bit.ly/#{$img}");
 //       background-size: 100%;
+//       transition: all 1s ease-in-out;
 //     }
 //     .tiles[index="#{$num}"] {
 //       background-color: mix($color1, $color2, percentage($num / ($num + 2)));
@@ -87,7 +88,7 @@ $img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cCPdMK','2cCQeEz','2d2nKiS','2cYFpMe'
     .hover-#{$num} {
       background-image: url("../images/#{$num}.jpg");
       background-size: 105%;
-      transition: background-size .5s ease-in-out;
+      transition: all 1s ease-in-out;
     }
     .tiles[index="#{$num}"] {
       background-color: mix($color1, $color2, percentage($num / ($num + 2)));
