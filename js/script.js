@@ -22,7 +22,7 @@
 $(".tiles")
   .mouseenter(function() {
     index = $(this).attr("index");
-    var image = '../prador/Tiles/tree/master/images/'+index+'.jpg';
+    var image = 'https://github.com/prador/Tiles/tree/master/images/'+index+'.jpg';
     // use local files for images
     $(".tile-wrapper").css('background-image','url('+image+')');
     // Use cdn based from array
