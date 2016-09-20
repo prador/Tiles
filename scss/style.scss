@@ -1,0 +1,99 @@
+/* Browser style Reset*/
+@import "partials/reset";
+
+ /* variables */
+$color1: #005daf;
+$color2: #22a62e;
+$num: 1;
+$img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cCPdMK','2cCQeEz','2d2nKiS','2cYFpMe','2cL0QNn','2cCPJdm','2d5V8JW','2cX6SuM','2cKLTfS';
+
+/*outer div*/
+.tile-wrapper  {
+  background-image: url(../images/background.png);
+  background-size: 100%;
+  background-position: center;
+  height: 80vh;
+  width: 100vw;
+  transition: all 1s ease-in-out;
+  /* tile styles*/
+  .tiles {
+    color: #fff;
+    height: percentage(1 / 3);
+    width: percentage(1 / 4);
+    float: left;
+    position: relative;
+    h3 {
+      font-weight: normal;
+      float: right;
+      opacity: 0;
+    }
+    img {
+      position: absolute;
+      bottom: 0px;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    span {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+    }
+    .desc {
+      opacity: 0;
+    }
+    &:hover {
+      *{
+        transition: all .75s ease-in-out;
+      }
+      img,.desc,h3 {
+        opacity: 1;
+      }
+      img {
+        transform: translate(15px,-15px);
+      }
+      h3 {
+        transform: translateX(-15px);
+      }
+      .name {
+        transform: translateY(-20px);
+      }
+    }
+  }
+}
+
+/* for bit.ly urls */
+
+//
+// @each $img in $img-list {
+//     .hover-#{$num} {
+//       background-image: url("http://bit.ly/#{$img}");
+//       background-size: 100%;
+//     }
+//     .tiles[index="#{$num}"] {
+//       background-color: mix($color1, $color2, percentage($num / ($num + 2)));
+//       opacity: 0;
+//       &:hover {
+//         opacity: 0.8;
+//       }
+//     }
+//     $num: $num + 1;
+// }
+
+/* for folder based images */
+
+@for $num from 1 through 12 {
+    .hover-#{$num} {
+      background-image: url("../images/#{$num}.jpg");
+      background-size: 105%;
+      transition: background-size .5s ease-in-out;
+    }
+    .tiles[index="#{$num}"] {
+      background-color: mix($color1, $color2, percentage($num / ($num + 2)));
+      opacity: 0;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+}
