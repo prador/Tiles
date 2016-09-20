@@ -376,6 +376,7 @@ th {
     .tile-wrapper .tiles h3 {
       font-weight: normal;
       float: right;
+      text-transform: capitalize;
       opacity: 0; }
     .tile-wrapper .tiles img {
       position: absolute;
@@ -386,6 +387,7 @@ th {
       opacity: 0; }
     .tile-wrapper .tiles span {
       position: absolute;
+      text-transform: capitalize;
       bottom: 10px;
       right: 15px; }
     .tile-wrapper .tiles .desc {
