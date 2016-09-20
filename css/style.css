@@ -406,7 +406,7 @@ th {
 .hover-1 {
   background-image: url("../images/1.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="1"] {
   background-color: #178e59;
@@ -417,7 +417,7 @@ th {
 .hover-2 {
   background-image: url("../images/2.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="2"] {
   background-color: #11826f;
@@ -428,7 +428,7 @@ th {
 .hover-3 {
   background-image: url("../images/3.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="3"] {
   background-color: #0e7a7b;
@@ -439,7 +439,7 @@ th {
 .hover-4 {
   background-image: url("../images/4.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="4"] {
   background-color: #0b7584;
@@ -450,7 +450,7 @@ th {
 .hover-5 {
   background-image: url("../images/5.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="5"] {
   background-color: #0a728a;
@@ -461,7 +461,7 @@ th {
 .hover-6 {
   background-image: url("../images/6.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="6"] {
   background-color: #096f8f;
@@ -472,7 +472,7 @@ th {
 .hover-7 {
   background-image: url("../images/7.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="7"] {
   background-color: #086d92;
@@ -483,7 +483,7 @@ th {
 .hover-8 {
   background-image: url("../images/8.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="8"] {
   background-color: #076c95;
@@ -494,7 +494,7 @@ th {
 .hover-9 {
   background-image: url("../images/9.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="9"] {
   background-color: #066a98;
@@ -505,7 +505,7 @@ th {
 .hover-10 {
   background-image: url("../images/10.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="10"] {
   background-color: #06699a;
@@ -516,7 +516,7 @@ th {
 .hover-11 {
   background-image: url("../images/11.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="11"] {
   background-color: #05689b;
@@ -527,7 +527,7 @@ th {
 .hover-12 {
   background-image: url("../images/12.jpg");
   background-size: 105%;
-  transition: background-size .5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .tiles[index="12"] {
   background-color: #05679d;
