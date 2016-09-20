@@ -22,7 +22,7 @@
 $(".tiles")
   .mouseenter(function() {
     index = $(this).attr("index");
-    var image = 'https://github.com/prador/Tiles/blob/master/images/'+index+'.jpg';
+    var image = 'images/'+index+'.jpg';
     // use local files for images
     $(".tile-wrapper").css('background-image','url('+image+')');
     // Use cdn based from array
@@ -34,7 +34,7 @@ $(".tiles")
 
 // function imgChange(index){
 // use local files for images
-//     var image = 'https://github.com/prador/Tiles/blob/master/images/'+index+'.jpg';
+//     var image = 'images/'+index+'.jpg';
 //     wrap.style.backgroundImage = "url("+image+")";
 // Use cdn based from array
 //     wrap.style.backgroundImage = "url("+imgArr[--index]+")";
