@@ -384,49 +384,73 @@ p {
   width: 50%;
   margin: 0 auto; }
 
-#landing {
+#intro {
   padding-top: 3em; }
-  #landing .container {
+  #intro .container {
     width: 50%;
     margin: 0 auto 10em; }
-    #landing .container h1 {
+    #intro .container h1 {
       margin: 0em 0em 2em; }
-    #landing .container p a {
+    #intro .container p a {
       text-decoration: none;
       font-weight: bold;
       color: #005daf; }
-    #landing .container p span {
+    #intro .container p span {
       text-transform: capitalize;
       margin-right: 3.5em;
       font-size: 18px;
       font-weight: bold; }
-    #landing .container p:last-child {
+    #intro .container p:last-child {
       margin: 3em 0em 3em 0em; }
+    #intro .container .github {
+      text-align: center;
+      padding-top: 1em; }
+      #intro .container .github a {
+        background-image: url("http://image.flaticon.com/icons/svg/25/25231.svg");
+        background-position: 101% -1px;
+        background-size: 38px;
+        background-repeat: no-repeat;
+        border: 3px solid #000;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+        padding: 10px 50px 10px 20px; }
 
 .navbar {
   position: fixed;
-  top: 40vh;
+  top: 30vh;
   left: 0vh;
   z-index: 3;
-  width: 60px;
+  width: 100px;
   background-color: transparent; }
   .navbar a {
-    font-size: 10px;
+    font-size: 9px;
     color: white;
     padding: 1px;
     text-decoration: none; }
     .navbar a .nav-tile {
-      height: 25px;
-      width: 25px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
       background-color: #13a0a0;
       transition: all .25s linear;
       box-shadow: 1px 1px 5px #a9a9a9;
       cursor: pointer;
-      padding: 8px 9px;
-      margin: 5px 25px; }
-      .navbar a .nav-tile:hover, .navbar a .nav-tile .active {
-        transform: scale(2.5, 2.5) translateX(5px); }
+      margin: 5px 25px;
+      text-transform: uppercase; }
+      .navbar a .nav-tile:hover, .navbar a .nav-tile.active {
+        transform: scale(1.9, 1.9); }
+      .navbar a .nav-tile.intro {
+        padding: 15px 7px; }
+      .navbar a .nav-tile.demo {
+        padding: 15px 7px; }
+      .navbar a .nav-tile.jq-css {
+        padding: 15px 3px; }
+      .navbar a .nav-tile.jq {
+        padding: 15px 14px; }
+      .navbar a .nav-tile.js {
+        padding: 15px 14px; }
 
 #demo {
   padding: 1em 0 10vh; }

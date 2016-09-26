@@ -2,12 +2,49 @@
 
 $('a[href*=#]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
     $(this).find(".nav-tiles").toggleClass("active");
     console.log(this);
 });
 
+$(".nav-tile.intro").addClass("active");
 
+// adding current view item to navbar.
+
+$('.nav-tile').click( function(){
+    $('.nav-tile').removeClass("active");
+    $(this).addClass("active");
+});
+
+// adding current view item to navbar on scrolling (scrollspy)
+
+$(window).scroll(function(){
+  var demoTop = $("#demo").position().top;
+  var jqCssTop = $("#jq-css").position().top;
+  var jqTop = $("#jq-only").position().top;
+  var jsTop = $("#js-only").position().top;
+  var scrollTopPos = $(window).scrollTop();
+  var mid1 = demoTop/2;
+  var mid2 = (demoTop+jqCssTop)/2;
+  var mid3 = (jqCssTop+jqTop)/2;
+  var mid4 = (jqTop+jsTop)/2;
+  if((scrollTopPos >= 0) && (scrollTopPos <= mid1)) {
+    $('.nav-tile').removeClass("active");
+    $(".nav-tile.intro").addClass("active");
+  } else if((scrollTopPos >= mid1) && (scrollTopPos <= mid2)) {
+    $('.nav-tile').removeClass("active");
+    $(".nav-tile.demo").addClass("active");
+  } else if((scrollTopPos >= mid2) && (scrollTopPos <= mid3)) {
+    $('.nav-tile').removeClass("active");
+    $(".nav-tile.jq-css").addClass("active");
+  } else if((scrollTopPos >= mid3) && (scrollTopPos <= mid4)) {
+    $('.nav-tile').removeClass("active");
+    $(".nav-tile.jq").addClass("active");
+  } else {
+    $('.nav-tile').removeClass("active");
+    $(".nav-tile.js").addClass("active");
+  }
+});
 // jQuery with css example
 
   var index = 0;
