@@ -7,86 +7,144 @@
 	<title>Tile test</title>
 	<meta name="generator" content="Bootply" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<section id="tile-wrapper" class="tile-wrapper">
-		<div class="tiles" index="1">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="2">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="3">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="4">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="5">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="6">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="7">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="8">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="9">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="10">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="11">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
-		</div>
-		<div class="tiles" index="12">
-			<h3>some text as an example</h3>
-			<img src="images/prof.png" alt="prof" />
-			<span class="name">john doe</span>
-			<span class="desc">new text</span>
+	<div class="img-loader load1 load2 load3 load4 load5 load6 load7 load8 load9 load10 load11 load12"></div>
+	<div class="navbar">
+		<a href="#landing"><div class="nav-tile">intro</div></a>
+		<a href="#demo"><div class="nav-tile">demo</div></a>
+		<a href="#jq-css"><div class="nav-tile">jq/css</div></a>
+		<a href="#jq-only"><div class="nav-tile">jq</div></a>
+		<a href="#js-only"><div class="nav-tile">js</div></a>
+	</div>
+	<section id="landing">
+		<div class="container">
+			<h1>A test case of hover tiles</h1>
+			<p>To find inspiration as a web designer/developer, one must be an explorer in the vast wonderland we call the  internet. During one such outing, i came across a new kind of display gallery in the <a target="_blank" href="https://www.jio.com/#grid-lines">Jio</a> home page.
+			This is a div section with multiple tiles within it. When hovered on each of the children tiles, the parent background changes, while revealing content within the tile.
+			These tiles have user reviews and feedback about the product.</p>
+			<p>I had noticed that this structure worked with the help of javascript with the "onmouseover" function. I wondered if this effect can be replicated with pure CSS.
+			CSS nowadays is becoming more and more powerful, especially with the superpowers provided by the preprocessor SASS. So i set out to experiment if my theory stands true.
+			I felt this could be an excerise to practice and develop further my skills in SASS based CSS coding.</p>
+			<p>After starting out with the development, i realised that the properties of SASS/CSS that i had assumed were the key to building this without javascript, the <b>":has"</b> and <b>":parent"</b> psuedo selectors weren't supported by most browsers as yet.
+			Not to be disheartened, I tried to build the same using javascript/jQuery with the support of CSS.</p>
+			<p>The solution i have come up with are shown below as 3 alternatives. Use the quick floating navigation on the left or jump directly to the code by clicking any of the links below.</p>
+			<p><a href="#jq-css"><span>using SASS/CSS classes with jQuery </span></a> <a href="#jq-only"><span>Using just jQuery</span></a><a href="#js-only"><span>Using vanilla javascript</span></a></p>
 		</div>
 	</section>
+
+	<section id="demo">
+		<h1 class="demo-heading">Demo</h1>
+		<div class="tile-wrapper">
+			<div class="tiles" index="1">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="2">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="3">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="4">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="5">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="6">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="7">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="8">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="9">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="10">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="11">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+			<div class="tiles" index="12">
+				<h3>some text as an example</h3>
+				<img src="images/prof.png" alt="prof" />
+				<span class="name">john doe</span>
+				<span class="desc">new text</span>
+			</div>
+		</div>
+	</section>
+	<section id="jq-css">
+		<div class="container">
+			<h1>Using SASS/CSS classes with jQuery </h1>
+			<p>In the example below, there are two methods of generating classes using loops in SASS. You can click on the "view compiled code" button in the scss tab to view the compiled CSS code. </p>
+			<p>In the first method of generating CSS classes, we can use a variable list of Static URLs, and <b><em>@each</em></b> loop for generating multiple classes with different background images. </p>
+		 	<p>In the second method, we can use a <b><em>@for</em></b> loop, to call the images from our "images" folder in the project structure. </p>
+			<p>In both the methods, the HTML and JS do not change.</p>
+		</div>
+		<p data-height="450" data-theme-id="25600" data-slug-hash="ZpBZaw" data-default-tab="css,result" data-user="prador" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/prador/pen/ZpBZaw/">tiles jq-css</a> by pradyumna (<a href="http://codepen.io/prador">@prador</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+	</section>
+	<section id="jq-only">
+		<div class="container">
+			<h1>Using just jQuery</h1>
+			<p>In the example below, the concept is implemented using just jQuery. The variable array list is used to feed URLs to match the correct index when the tile is hovered on.</p>
+			<p>A second method is commented out, where we can just call the images from our "images" folder in the project structure. </p>
+			<p>In both the methods, the HTML and CSS do not change.</p>
+		</div>
+		<p data-height="500" data-theme-id="25600" data-slug-hash="kkyrdL" data-default-tab="js,result" data-user="prador" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/prador/pen/kkyrdL/">tiles jq only</a> by pradyumna (<a href="http://codepen.io/prador">@prador</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		</section>
+	<section id="js-only">
+		<div class="container">
+			<h1>using vanilla javascript </h1>
+			<p>In the example below, the concept is implemented using just vanilla javascript with no library dependency. The variable array list is used to feed URLs to match the correct index when the tile is hovered on.</p>
+			<p>A second method is commented out, where we can just call the images from our "images" folder in the project structure. </p>
+			<p>In both the methods, the HTML and CSS do not change.</p>
+		</div>
+		<p data-height="500" data-theme-id="25600" data-slug-hash="vXmNwV" data-default-tab="js,result" data-user="prador" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/prador/pen/vXmNwV/">tiles js only</a> by pradyumna (<a href="http://codepen.io/prador">@prador</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+	</section>
+
 	<!-- script references -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

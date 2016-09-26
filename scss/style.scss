@@ -5,15 +5,97 @@
 $color1: #005daf;
 $color2: #22a62e;
 $num: 1;
-$img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cCPdMK','2cCQeEz','2d2nKiS','2cYFpMe','2cL0QNn','2cCPJdm','2d5V8JW','2cX6SuM','2cKLTfS';
+$img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cW8PbE','2cCQeEz','2d2nKiS','2cYFpMe','2cL0QNn','2cCPJdm','2d5V8JW','2cX6SuM','2cKLTfS';
 
 /*outer div*/
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+section {
+  height: 100vh;
+  width: 90vw;
+  margin:0 auto;
+}
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Lobster', cursive;
+}
+p {
+  margin-top: 2em;
+  font-size: 20px;
+  text-transform: full-width;
+  font-family: 'Quicksand', sans-serif;
+}
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+#landing {
+  padding-top: 3em;
+  .container{
+    width: 50%;
+    margin: 0 auto 10em;
+    // border-bottom: 1px solid #000;
+    h1 {
+      margin: 0em 0em 2em;
+    }
+    p {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #005daf;
+      }
+      span {
+        text-transform: capitalize;
+        margin-right:3.5em;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      &:last-child {
+        margin: 3em 0em 3em 0em;
+      }
+    }
+  }
+}
+.navbar {
+  position: fixed;
+  top: 40vh;
+  left: 0vh;
+  z-index: 3;
+  width: 60px;
+  background-color: transparent;
+  a {
+    font-size: 10px;
+    color: white;
+    padding: 1px;
+    text-decoration: none;
+    .nav-tile {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: #13a0a0;
+      transition: all .25s linear;
+      box-shadow: 1px 1px 5px #a9a9a9;
+      cursor: pointer;
+      padding: 8px 9px;
+      margin: 5px 25px;
+      &:hover,.active {
+        transform: scale(2.5,2.5) translateX(5px);
+      }
+    }
+  }
+}
+#demo {
+  padding: 1em 0 10vh;
+}
 .tile-wrapper  {
+  height: 80vh;
   background-image: url(../images/background.png);
   background-size: 100%;
   background-position: center;
-  height: 80vh;
-  width: 100vw;
   transition: all 1s ease-in-out;
   /* tile styles*/
   .tiles {
@@ -62,10 +144,21 @@ $img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cCPdMK','2cCQeEz','2d2nKiS','2cYFpMe'
     }
   }
 }
-
+#jq-css,#jq-only,#js-only  {
+  padding: 1em 0em 5em;
+  p {
+    margin-top: 1em;
+  }
+}
+#jq-only,#js-only  {
+  .container {
+    p:last-child {
+      margin-bottom: 3em;
+    }
+  }
+}
 /* for bit.ly urls */
 
-//
 // @each $img in $img-list {
 //     .hover-#{$num} {
 //       background-image: url("http://bit.ly/#{$img}");
@@ -83,8 +176,14 @@ $img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cCPdMK','2cCQeEz','2d2nKiS','2cYFpMe'
 // }
 
 /* for folder based images */
-
+.img-loader{
+  width: 0px;
+  height: 0px;
+}
 @for $num from 1 through 12 {
+    .load#{$num}{
+      background-image: url("../images/#{$num}.jpg");
+    }
     .hover-#{$num} {
       background-image: url("../images/#{$num}.jpg");
       background-size: 105%;
