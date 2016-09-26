@@ -1,10 +1,8 @@
 // scrolling
 
-$('a[href*=#]').on('click', function(event){
+$('a[href*=#]:not(.jio)').on('click', function(event){
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
-    $(this).find(".nav-tiles").toggleClass("active");
-    console.log(this);
 });
 
 $(".nav-tile.intro").addClass("active");
