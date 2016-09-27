@@ -22,7 +22,6 @@ $(window).scroll(function(){
   var jqTop = $("#jq-only").position().top;
   var jsTop = $("#js-only").position().top;
   var scrollTopPos = $(window).scrollTop();
-  console.log(demoTop);
   var mid1 = demoTop/2;
   var mid2 = (demoTop+jqCssTop)/2;
   var mid3 = (jqCssTop+jqTop)/2;
