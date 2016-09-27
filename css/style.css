@@ -364,7 +364,6 @@ body {
   overflow-x: hidden; }
 
 section {
-  height: 100vh;
   width: 90vw;
   margin: 0 auto; }
 
@@ -376,7 +375,7 @@ h1 {
 
 p {
   margin-top: 2em;
-  font-size: 20px;
+  font-size: 1.25em;
   text-transform: full-width;
   font-family: 'Quicksand', sans-serif; }
 
@@ -387,7 +386,6 @@ p {
 #intro {
   padding-top: 3em; }
   #intro .container {
-    width: 50%;
     margin: 0 auto 10em; }
     #intro .container h1 {
       margin: 0em 0em 2em; }
@@ -422,7 +420,6 @@ p {
   top: 30vh;
   left: 0vh;
   z-index: 3;
-  width: 100px;
   background-color: transparent; }
   .navbar a {
     font-size: 9px;
@@ -453,12 +450,13 @@ p {
         padding: 15px 14px; }
 
 #demo {
-  padding: 1em 0 10vh; }
+  padding: 0.5em 0 10vh; }
 
 .tile-wrapper {
   height: 80vh;
   background-image: url(../images/background.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   transition: all 1s ease-in-out;
   /* tile styles*/ }
@@ -515,6 +513,7 @@ p {
 
 .hover-1 {
   background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -529,6 +528,7 @@ p {
 
 .hover-2 {
   background-image: url("../images/2.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -543,6 +543,7 @@ p {
 
 .hover-3 {
   background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -557,6 +558,7 @@ p {
 
 .hover-4 {
   background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -571,6 +573,7 @@ p {
 
 .hover-5 {
   background-image: url("../images/5.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -585,6 +588,7 @@ p {
 
 .hover-6 {
   background-image: url("../images/6.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -599,6 +603,7 @@ p {
 
 .hover-7 {
   background-image: url("../images/7.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -613,6 +618,7 @@ p {
 
 .hover-8 {
   background-image: url("../images/8.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -627,6 +633,7 @@ p {
 
 .hover-9 {
   background-image: url("../images/9.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -641,6 +648,7 @@ p {
 
 .hover-10 {
   background-image: url("../images/10.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -655,6 +663,7 @@ p {
 
 .hover-11 {
   background-image: url("../images/11.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -669,6 +678,7 @@ p {
 
 .hover-12 {
   background-image: url("../images/12.jpg");
+  background-repeat: no-repeat;
   background-size: 105%;
   transition: all 1s ease-in-out; }
 
@@ -677,3 +687,27 @@ p {
   opacity: 0; }
   .tiles[index="12"]:hover {
     opacity: 0.8; }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%; }
+  section {
+    width: 75vw; }
+  .navbar a {
+    font-size: 5px; }
+    .navbar a .nav-tile {
+      height: 22px;
+      width: 22px;
+      margin: 5px 10px; }
+      .navbar a .nav-tile:hover, .navbar a .nav-tile.active {
+        transform: scale(1.7, 1.7); }
+      .navbar a .nav-tile.intro {
+        padding: 8px 3px; }
+      .navbar a .nav-tile.demo {
+        padding: 8px 3px; }
+      .navbar a .nav-tile.jq-css {
+        padding: 8px 2px; }
+      .navbar a .nav-tile.jq {
+        padding: 8px 7px; }
+      .navbar a .nav-tile.js {
+        padding: 8px 7px; } }

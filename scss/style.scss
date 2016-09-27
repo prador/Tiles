@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 section {
-  height: 100vh;
   width: 90vw;
   margin:0 auto;
 }
@@ -25,7 +24,7 @@ h1 {
 }
 p {
   margin-top: 2em;
-  font-size: 20px;
+  font-size: 1.25em;
   text-transform: full-width;
   font-family: 'Quicksand', sans-serif;
 }
@@ -36,7 +35,6 @@ p {
 #intro {
   padding-top: 3em;
   .container{
-    width: 50%;
     margin: 0 auto 10em;
     // border-bottom: 1px solid #000;
     h1 {
@@ -81,7 +79,6 @@ p {
   top: 30vh;
   left: 0vh;
   z-index: 3;
-  width: 100px;
   background-color: transparent;
   a {
     font-size: 9px;
@@ -120,12 +117,13 @@ p {
   }
 }
 #demo {
-  padding: 1em 0 10vh;
+  padding: 0.5em 0 10vh;
 }
 .tile-wrapper  {
   height: 80vh;
   background-image: url(../images/background.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   transition: all 1s ease-in-out;
   /* tile styles*/
@@ -193,6 +191,7 @@ p {
 // @each $img in $img-list {
 //     .hover-#{$num} {
 //       background-image: url("http://bit.ly/#{$img}");
+//       background-repeat: no-repeat;
 //       background-size: 100%;
 //       transition: all 1s ease-in-out;
 //     }
@@ -217,6 +216,7 @@ p {
     }
     .hover-#{$num} {
       background-image: url("../images/#{$num}.jpg");
+      background-repeat: no-repeat;
       background-size: 105%;
       transition: all 1s ease-in-out;
     }
@@ -228,3 +228,39 @@ p {
       }
     }
 }
+@media only screen and (max-width: 600px){
+    .container {
+      width: 100%;
+    }
+    section {
+      width:75vw;
+    }
+    .navbar {
+      a {
+        font-size: 5px;
+        .nav-tile {
+          height: 22px;
+          width: 22px;
+          margin: 5px 10px;
+          &:hover,&.active {
+            transform: scale(1.7,1.7);
+          }
+          &.intro {
+            padding: 8px 3px;
+          }
+          &.demo {
+            padding: 8px 3px;
+          }
+          &.jq-css {
+            padding: 8px 2px;
+          }
+          &.jq {
+            padding: 8px 7px;
+          }
+          &.js {
+            padding: 8px 7px;
+          }
+        }
+      }
+    }
+  }

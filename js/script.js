@@ -22,6 +22,7 @@ $(window).scroll(function(){
   var jqTop = $("#jq-only").position().top;
   var jsTop = $("#js-only").position().top;
   var scrollTopPos = $(window).scrollTop();
+  console.log(demoTop);
   var mid1 = demoTop/2;
   var mid2 = (demoTop+jqCssTop)/2;
   var mid3 = (jqCssTop+jqTop)/2;
@@ -67,8 +68,8 @@ $(window).scroll(function(){
 //   .mouseenter(function() {
 //     index = $(this).attr("index");
 //     var image = '../images/'+index+'.jpg';
-//     $(".tile-wrapper").css('background-image','url('+image+')');
-//     $(".tile-wrapper").css('background-image','url('+imgArr[--index]+')');
+//     $(".tile-wrapper").css({'background-image' : 'url('+image+')','background-repeat': 'no-repeat'});
+//     $(".tile-wrapper").css({'background-image' : 'url('+imgArr[--index]+')','background-repeat': 'no-repeat'});
 //   });
 
 
@@ -79,6 +80,7 @@ $(window).scroll(function(){
 //     // var image = '../images/'+index+'.jpg';
 //     // wrap.style.backgroundImage = "url("+image+")";
 //     wrap.style.backgroundImage = "url("+imgArr[--index]+")";
+//     wrap.style.backgroundRepeat = "no-repeat";
 // }
 // for(i=0;i<12;i++){
 //   var tile = document.getElementsByClassName("tiles")[i];
