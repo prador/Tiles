@@ -118,6 +118,5 @@ $(".tiles")
 $(document).ready(function(){
   for (var i = 1; i <= 12; i++) {
     $(".tiles[index="+i+"]").mouseenter();
-    console.log("entered" + i);
   }
 });
