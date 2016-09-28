@@ -454,7 +454,7 @@ p {
 
 .tile-wrapper {
   height: 80vh;
-  background-image: url(../images/background.png);
+  background-image: url(../images/background.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -504,33 +504,11 @@ p {
 
 /* for bit.ly urls */
 /* for folder based images */
-.img-loader {
-  width: 0px;
-  height: 0px; }
-
-.load1 {
-  background-image: url("../images/1.jpg"); }
-
-.hover-1 {
-  background-image: url("../images/1.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
-
 .tiles[index="1"] {
   background-color: #178e59;
   opacity: 0; }
   .tiles[index="1"]:hover {
     opacity: 0.8; }
-
-.load2 {
-  background-image: url("../images/2.jpg"); }
-
-.hover-2 {
-  background-image: url("../images/2.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
 
 .tiles[index="2"] {
   background-color: #11826f;
@@ -538,29 +516,11 @@ p {
   .tiles[index="2"]:hover {
     opacity: 0.8; }
 
-.load3 {
-  background-image: url("../images/3.jpg"); }
-
-.hover-3 {
-  background-image: url("../images/3.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
-
 .tiles[index="3"] {
   background-color: #0e7a7b;
   opacity: 0; }
   .tiles[index="3"]:hover {
     opacity: 0.8; }
-
-.load4 {
-  background-image: url("../images/4.jpg"); }
-
-.hover-4 {
-  background-image: url("../images/4.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
 
 .tiles[index="4"] {
   background-color: #0b7584;
@@ -568,29 +528,11 @@ p {
   .tiles[index="4"]:hover {
     opacity: 0.8; }
 
-.load5 {
-  background-image: url("../images/5.jpg"); }
-
-.hover-5 {
-  background-image: url("../images/5.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
-
 .tiles[index="5"] {
   background-color: #0a728a;
   opacity: 0; }
   .tiles[index="5"]:hover {
     opacity: 0.8; }
-
-.load6 {
-  background-image: url("../images/6.jpg"); }
-
-.hover-6 {
-  background-image: url("../images/6.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
 
 .tiles[index="6"] {
   background-color: #096f8f;
@@ -598,29 +540,11 @@ p {
   .tiles[index="6"]:hover {
     opacity: 0.8; }
 
-.load7 {
-  background-image: url("../images/7.jpg"); }
-
-.hover-7 {
-  background-image: url("../images/7.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
-
 .tiles[index="7"] {
   background-color: #086d92;
   opacity: 0; }
   .tiles[index="7"]:hover {
     opacity: 0.8; }
-
-.load8 {
-  background-image: url("../images/8.jpg"); }
-
-.hover-8 {
-  background-image: url("../images/8.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
 
 .tiles[index="8"] {
   background-color: #076c95;
@@ -628,29 +552,11 @@ p {
   .tiles[index="8"]:hover {
     opacity: 0.8; }
 
-.load9 {
-  background-image: url("../images/9.jpg"); }
-
-.hover-9 {
-  background-image: url("../images/9.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
-
 .tiles[index="9"] {
   background-color: #066a98;
   opacity: 0; }
   .tiles[index="9"]:hover {
     opacity: 0.8; }
-
-.load10 {
-  background-image: url("../images/10.jpg"); }
-
-.hover-10 {
-  background-image: url("../images/10.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
 
 .tiles[index="10"] {
   background-color: #06699a;
@@ -658,29 +564,11 @@ p {
   .tiles[index="10"]:hover {
     opacity: 0.8; }
 
-.load11 {
-  background-image: url("../images/11.jpg"); }
-
-.hover-11 {
-  background-image: url("../images/11.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
-
 .tiles[index="11"] {
   background-color: #05689b;
   opacity: 0; }
   .tiles[index="11"]:hover {
     opacity: 0.8; }
-
-.load12 {
-  background-image: url("../images/12.jpg"); }
-
-.hover-12 {
-  background-image: url("../images/12.jpg");
-  background-repeat: no-repeat;
-  background-size: 105%;
-  transition: all 1s ease-in-out; }
 
 .tiles[index="12"] {
   background-color: #05679d;

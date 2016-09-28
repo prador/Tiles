@@ -5,7 +5,7 @@
 $color1: #005daf;
 $color2: #22a62e;
 $num: 1;
-$img-list: '2cCQ2VK','2decFOU','2d2oO6c','2cW8PbE','2cCQeEz','2d2nKiS','2cYFpMe','2cL0QNn','2cCPJdm','2d5V8JW','2cX6SuM','2cKLTfS';
+$img-list: 'wh8cjfzwz','esglrto5v','83a2bt2tv','96u6nrngz','7t7567dlf','o5h6vxrwz','4c5338ej7','niia6ev0z','41xkjvzwz','437idb1qr','taiedk4ur','pff0azloz';
 
 /*outer div*/
 body {
@@ -121,7 +121,7 @@ p {
 }
 .tile-wrapper  {
   height: 80vh;
-  background-image: url(../images/background.png);
+  background-image: url(../images/background.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,11 +186,12 @@ p {
     }
   }
 }
+
 /* for bit.ly urls */
 
 // @each $img in $img-list {
 //     .hover-#{$num} {
-//       background-image: url("http://bit.ly/#{$img}");
+//       background-image: url("https://s11.postimg.org/#{$img}/image.jpg");
 //       background-repeat: no-repeat;
 //       background-size: 100%;
 //       transition: all 1s ease-in-out;
@@ -206,20 +207,14 @@ p {
 // }
 
 /* for folder based images */
-.img-loader{
-  width: 0px;
-  height: 0px;
-}
+
 @for $num from 1 through 12 {
-    .load#{$num}{
-      background-image: url("../images/#{$num}.jpg");
-    }
-    .hover-#{$num} {
-      background-image: url("../images/#{$num}.jpg");
-      background-repeat: no-repeat;
-      background-size: 105%;
-      transition: all 1s ease-in-out;
-    }
+    // .hover-#{$num} {
+    //   background-image: url("../images/#{$num}.jpg");
+    //   background-repeat: no-repeat;
+    //   background-size: 105%;
+    //   transition: all 1s ease-in-out;
+    // }
     .tiles[index="#{$num}"] {
       background-color: mix($color1, $color2, percentage($num / ($num + 2)));
       opacity: 0;
@@ -228,6 +223,7 @@ p {
       }
     }
 }
+
 @media only screen and (max-width: 600px){
     .container {
       width: 100%;
